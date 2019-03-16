@@ -1,0 +1,9 @@
+HOTEL(0,"酒店订单"),
+VISITS(1,"景区订单"),
+FOOD(2,"餐饮订单"),
+BUY(3,"申购"),
+TRADE(4,"交易"),
+PURCHASE(5,"认购"),
+TRAVERL(6,"定制游"),
+STATATEGY(7,"攻略"),
+GOODS(8,"商品");

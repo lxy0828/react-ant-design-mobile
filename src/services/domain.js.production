@@ -1,0 +1,5 @@
+const domain = {
+    'REFEREE': 'http://referee.ymq.me',
+    'USER': 'http://user.ymq.me'
+}
+export default domain;

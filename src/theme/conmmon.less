@@ -1,0 +1,137 @@
+@baseFontSize: 100/375 * 1vw;
+//分割线
+.divider {
+    height: 1px;
+    background-color: #DDDDDD;
+    margin-top: 20*@baseFontSize;
+    margin-bottom: 20*@baseFontSize;
+}
+
+.Divider {
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+div.headerFlexd {
+    position: fixed;
+    width: 100%;
+    height: 64*@baseFontSize;
+    top: 0;
+}
+
+.payBtn {
+    height: 50*@baseFontSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02AAB0;
+    font-size: 20*@baseFontSize;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+/*---------过渡header---------------*/
+
+.v-common-header {
+    height: 64*@baseFontSize;
+    padding-top: 20*@baseFontSize;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    * {
+        box-sizing: border-box;
+    }
+    position: relative;
+    .v-title {
+        position: absolute;
+        top: 20*@baseFontSize;
+        left: 0;
+        font-size: 18*@baseFontSize;
+        height: 44*@baseFontSize;
+        text-align: center;
+        line-height: 42*@baseFontSize;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        font-size: 18*@baseFontSize;
+        color: #333333;
+    }
+    .v-content {
+        position: relative;
+        height: 44*@baseFontSize;
+        display: flex;
+        padding-left: 20*@baseFontSize;
+        padding-right: 10*@baseFontSize;
+        align-items: center;
+        justify-content: space-between;
+        .v-back {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .save {
+            color: #02AAB0;
+            font-size: 16*@baseFontSize;
+        }
+    }
+}
+
+.res-addmodals {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    background-color: white;
+}
+
+.res-addmodals-show {
+    transform: translateX(0);
+}
+
+/*---------过渡header---------------*/
+
+.v-line {
+    position: relative;
+}
+
+.v-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20*@baseFontSize;
+    display: inline-block;
+    right: 0;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+
+.transaction-average-button {
+    width: 70*@baseFontSize  !important;
+    border: 1px solid #02AAB0 !important;
+    font-size: 14*@baseFontSize;
+    color: #02AAB0 !important;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onOkBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20*@baseFontSize;
+    height: 50*@baseFontSize;
+    background: linear-gradient(225deg, rgba(60, 200, 177, 1) 0%, rgba(21, 144, 149, 1) 100%);
+    border-radius: 4px;
+    font-size: 18*@baseFontSize;
+    font-weight: 400;
+    color: #FFFFFF;
+}

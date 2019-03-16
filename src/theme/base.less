@@ -1,0 +1,76 @@
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-size: 14*@baseFontSize;
+    font-weight: 300;
+}
+
+.am-list-item {
+    background-color: #F5F5F7;
+}
+
+.am-list-content {
+    font-size: 12*@baseFontSize ;
+    color: #666666;
+}
+
+.am-list-item.am-input-item {
+    background-color: #FFF;
+}
+
+//表单
+.am-list-item {
+    padding-left: 20*@baseFontSize ;
+    background-color: #FFFFFF;
+    min-height: 48*@baseFontSize;
+}
+
+.am-list-item .am-list-line .am-list-content {
+    color: #333333;
+    font-size: 16*@baseFontSize ;
+}
+
+.AgreeItem {
+    margin-top: 20*@baseFontSize;
+    margin-bottom: 30*@baseFontSize;
+    display: flex;
+    align-items: center;
+    height: 17*@baseFontSize;
+    font-size: 12*@baseFontSize;
+    color: #666666;
+}
+
+.countDown {
+    border: none;
+    outline: none;
+    padding: 0 10*@baseFontSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #02AAB0;
+    font-size: 14*@baseFontSize;
+    background: #FFFFFF;
+}
+
+.countDown::before {
+    content: '';
+    display: inline-block;
+    border-left: 1px solid #D8D8D8;
+    width: 2px;
+    margin-right: 10*@baseFontSize;
+    height: 25*@baseFontSize;
+}
+
+.countDownNosend:disabled {
+    background: #CCCCCC;
+    color: #FFFFFF;
+}
+
+.countDownNosend::before {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+}
+
+.am-list-item .am-input-extra {
+    max-height: none;
+}
